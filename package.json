@@ -4,6 +4,7 @@
   "description": "",
   "main": "server/server.js",
   "scripts": {
+    "dev": "vite --config my-config.js",
     "start": "node server --ignore client",
     "develop": "concurrently \"cd server && npm run start\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
@@ -17,7 +18,7 @@
     "concurrently": "^5.1.0"
   },
   "dependencies": {
-    "@vitejs/plugin-react": "^4.0.4",
-    "vite": "^4.4.7"
+    "@vitejs/plugin-react": "^1.0.0",
+    "vite": "^2.6.7"
   }
 }
